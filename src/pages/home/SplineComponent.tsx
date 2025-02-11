@@ -37,12 +37,11 @@ const SplineAndObjectives = () => {
         {/* Overlay Text for Desktop */}
         <div className="hidden md:flex absolute md:bottom-64 text-center text-white flex-col items-center px-4">
           <h1 className="text-6xl font-bold leading-tight">
-            AI-Transformation
+          AI-Tech  Catalyst
           </h1>
           <h1 className="text-6xl font-bold leading-tight">Partner</h1>
           <p className="mt-3 text-sm text-gray-300 max-w-md text-center">
-            Ship higher-quality software faster. Be the hero of your
-            engineering teams.
+          Ignite your AI journey with precision data tagging and annotation – your catalyst for transformation.
           </p>
         </div>
       </section>
@@ -57,17 +56,14 @@ const SplineAndObjectives = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-snug mx-auto max-w-[90%] md:max-w-[1100px]">
-          Select the <span className="text-[#A192FF]">channels</span> to
-          deliver growth
+        <h2 className="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-extrabold text-white leading-snug mx-auto max-w-[90%] md:max-w-[1100px]">
+          We are your <span className="text-[#A192FF]">strategic partner</span> —the dedicated channel that unlocks and accelerates your growth.
         </h2>
 
         {/* Supporting Text */}
         <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-[90%] md:max-w-[900px] mx-auto text-gray-400 leading-relaxed">
-          The efficiency and analytical capability of digital solutions,
-          combined with the impact of face-to-face, in-person interactions.
-          Trusted by start-ups, large enterprises, investors, and governments.
-          We are reimagining the way we do business.
+        The efficiency and analytical capability of digital solutions, combined with the impact of face to face, in-person interactions.
+        Trusted by start-ups, large enterprises, investors and governments. We are reimagining the way we do business.
         </p>
       </section>
     </main>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -46,8 +46,6 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-gray-300">Press Conferences</a></li>
             </ul>
           </div>
-
-          
         </div>
       </div>
 
@@ -59,6 +57,22 @@ const Footer: React.FC = () => {
             <a href="#" className="hover:text-gray-300">Terms of Service</a>
             <a href="#" className="hover:text-gray-300">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300">Cookies</a>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" className="hover:text-gray-300">
+              <FaFacebookF size={18} />
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <FaInstagram size={18} />
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <FaTwitter size={18} />
+            </a>
+            <a href="#" className="hover:text-gray-300">
+              <FaLinkedinIn size={18} />
+            </a>
           </div>
         </div>
       </div>

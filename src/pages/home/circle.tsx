@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       {/* Overlay Text */}
       <div className="relative z-10 text-center px-4 max-w-[330px] sm:max-w-none">
         <h1 className="text-xl sm:text-6xl font-bold text-white drop-shadow-lg">
-          <span className="text-[#B296F1]">Generative AI Inference</span> that
+          <span className="text-[#B296F1]">xTransmatrix AI Inference</span> that 
         </h1>
         <h2 className="text-xl sm:text-6xl font-bold text-white drop-shadow-lg">
           scales with you
@@ -33,9 +33,9 @@ const CircularBackgroundWithText: React.FC = () => {
     <div className="relative flex items-center justify-center w-full sm:h-screen mt-20 sm:mt-0 overflow-x-hidden">
       {/* Circular Background Image - Desktop */}
       <img
-        src="/images/Clip path group.png"
+        src="/images/Screenshot (189).png"
         alt="Circular Background"
-        className="hidden sm:block absolute w-[90%] h-[90%] object-contain sm:w-[80%] sm:h-[80%] sm:translate-x-10"
+        className="hidden sm:block absolute w-[90%] h-[90%] object-contain sm:w-[80%] sm:h-[80%] sm:translate-x-10 sm:-top-12" 
       />
 
       {/* Circular Background Image - Mobile */}
@@ -46,16 +46,16 @@ const CircularBackgroundWithText: React.FC = () => {
       />
 
       {/* Desktop View (Hidden on Mobile) */}
-      <div className="hidden sm:block absolute top-24 text-center w-full px-4 sm:px-0 sm:translate-x-10">
+      <div className="hidden sm:block absolute top-12 text-center w-full px-4 sm:px-0 sm:translate-x-10">
         <h1 className="text-2xl sm:text-4xl font-bold text-white leading-snug">
-          A dynamic team uniting top  
+          A hub of excellence
           <br className="hidden sm:block" />
-          talent and expertise
+          collaboration, and impact
         </h1>
         <p className="mt-2 text-xs sm:text-sm text-white max-w-lg mx-auto leading-relaxed">
-          Load gigabytes of weights in seconds with our optimized  
+        Creating impact through excellence and seamless collaboration. 
           <br className="hidden sm:block" />
-          container file system.
+          
         </p>
         <div className="mt-4 flex justify-center items-center">
           <button className="px-4 py-2 bg-[#7F60ED] text-white rounded-full text-xs sm:text-sm font-semibold">

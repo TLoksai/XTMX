@@ -9,9 +9,12 @@ interface Partner {
 
 // Industry Partners Data (Repeated for Seamless Scrolling)
 const partners: Partner[] = [
-  { id: 1, logo: "/images/partners/Logo box (1).png", alt: "Partner 1" },
-  { id: 2, logo: "/images/partners/Logo box (2).png", alt: "Partner 2" }, // Smaller and shifted logo
-  { id: 3, logo: "/images/partners/Logo box (6).png", alt: "Partner 3" },
+  { id: 1, logo: "/images/partners/1.png", alt: "Partner 1" },
+  { id: 2, logo: "/images/partners/2.png", alt: "Partner 2" }, // Smaller and shifted logo
+  { id: 3, logo: "/images/partners/3.png", alt: "Partner 3" },
+  { id: 1, logo: "/images/partners/4.png", alt: "Partner 1" },
+  { id: 2, logo: "/images/partners/5.png", alt: "Partner 2" }, // Smaller and shifted logo
+  { id: 3, logo: "/images/partners/6.png", alt: "Partner 3" },
 ];
 
 // Duplicate logos to create an infinite loop effect
@@ -51,7 +54,7 @@ const CombinedSection: React.FC = () => {
           to { transform: translateX(-33.33%); } /* Scroll exactly one full set */
         }
         .animate-scroll {
-          animation: scroll 8s linear infinite;
+          animation: scroll 10s linear infinite;
         }
       `}
       </style>
@@ -80,15 +83,12 @@ const CombinedSection: React.FC = () => {
 
           {/* Main Heading */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold">
-            A New B2B <span className="text-purple-400">Growth</span> Channel
+            Creating <span className="text-purple-400">growth through</span> innovation
           </h1>
 
           {/* Subtitle */}
           <p className="text-gray-300 text-sm md:text-base max-w-2xl mx-auto mt-4">
-            The efficiency and analytical capability of digital solutions, 
-            combined with the impact of face-to-face, in-person interactions. 
-            Trusted by start-ups, large enterprises, investors, and governments. 
-            We are reimagining the way we do business.
+            TCreating growth through innovation means challenging the status quo and turning bold ideas into action. By harnessing creative thinking and cutting-edge technology, we empower organizations to unlock new opportunities and thrive.
           </p>
         </div>
       </section>
