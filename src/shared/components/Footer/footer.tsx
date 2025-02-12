@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -23,28 +23,40 @@ const Footer: React.FC = () => {
         {/* Middle Section - Links */}
         <div className="w-full md:w-2/3 flex flex-wrap justify-between mt-8 md:mt-0 gap-8">
           <div>
-            <h4 className="text-gray-400 font-semibold">Platform</h4>
+            <h4 className="text-gray-400 font-semibold">Services</h4>
             <ul className="space-y-2 mt-2">
-              <li><a href="#" className="hover:text-gray-300">Plans & Pricing</a></li>
-              <li><a href="#" className="hover:text-gray-300">Personal AI Manager</a></li>
-              <li><a href="#" className="hover:text-gray-300">AI Business Writer</a></li>
+              <li><a href="/forge-ai" className="hover:text-gray-300">Forge Ai</a></li>
+              <li><a href="perform-ai" className="hover:text-gray-300">Perform Ai</a></li>
+              <li><a href="/dvisorya" className="hover:text-gray-300">Advisory</a></li>
+              <li><a href="/tech-squads" className="hover:text-gray-300">Tech Squads</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-gray-400 font-semibold">Company</h4>
+            <h4 className="text-gray-400 font-semibold">Industries</h4>
             <ul className="space-y-2 mt-2">
-              <li><a href="#" className="hover:text-gray-300">Blog</a></li>
-              <li><a href="#" className="hover:text-gray-300">Careers</a></li>
-              <li><a href="#" className="hover:text-gray-300">News</a></li>
+              <li><a href="/medtech" className="hover:text-gray-300">Med-Tech</a></li>
+              <li><a href="/automobile" className="hover:text-gray-300">Automobile</a></li>
+              <li><a href="insurance" className="hover:text-gray-300">Insurance</a></li>
+              <li><a href="banking" className="hover:text-gray-300">Banking and Payment</a></li>
             </ul>
           </div>
+          
+          {/* Social Media Section */}
           <div>
-            <h4 className="text-gray-400 font-semibold">Resources</h4>
-            <ul className="space-y-2 mt-2">
-              <li><a href="#" className="hover:text-gray-300">Documentation</a></li>
-              <li><a href="#" className="hover:text-gray-300">Papers</a></li>
-              <li><a href="#" className="hover:text-gray-300">Press Conferences</a></li>
-            </ul>
+            <h4 className="text-gray-400 font-semibold">Social Media</h4>
+            <div className="flex space-x-4 mt-2">
+              
+              
+              <a href="https://www.instagram.com/" className="hover:text-gray-300">
+                <FaInstagram size={18} />
+              </a>
+              <a href="https://www.youtube.com/@xtransmatrixconsultingserv7036" className="hover:text-gray-300">
+                <FaYoutube size={18} />
+              </a>
+              <a href="https://www.linkedin.com/company/xtransmatrix/?viewAsMember=true" className="hover:text-gray-300">
+                <FaLinkedinIn size={18} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -57,22 +69,6 @@ const Footer: React.FC = () => {
             <a href="#" className="hover:text-gray-300">Terms of Service</a>
             <a href="#" className="hover:text-gray-300">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300">Cookies</a>
-          </div>
-
-          {/* Social Media Icons */}
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gray-300">
-              <FaFacebookF size={18} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaInstagram size={18} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaTwitter size={18} />
-            </a>
-            <a href="#" className="hover:text-gray-300">
-              <FaLinkedinIn size={18} />
-            </a>
           </div>
         </div>
       </div>

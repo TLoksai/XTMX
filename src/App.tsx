@@ -78,6 +78,7 @@ const App: React.FC = () => {
             {/* Intelligence */}
              <Route path="/xtmx-intelligence" element={<XTMXIntelligence />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
  
             {/* Other Pages */}
              {/*<Route path="/technologies" element={<Technologies />} />

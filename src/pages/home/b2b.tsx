@@ -10,10 +10,10 @@ interface Partner {
 // Industry Partners Data (Repeated for Seamless Scrolling)
 const partners: Partner[] = [
   { id: 1, logo: "/images/partners/1.png", alt: "Partner 1" },
-  { id: 2, logo: "/images/partners/2.png", alt: "Partner 2" }, // Smaller and shifted logo
+  { id: 2, logo: "/images/partners/7.png", alt: "Partner 2" }, // Smaller and shifted logo
   { id: 3, logo: "/images/partners/3.png", alt: "Partner 3" },
   { id: 1, logo: "/images/partners/4.png", alt: "Partner 1" },
-  { id: 2, logo: "/images/partners/5.png", alt: "Partner 2" }, // Smaller and shifted logo
+  { id: 2, logo: "/images/partners/2.png", alt: "Partner 2" }, // Smaller and shifted logo
   { id: 3, logo: "/images/partners/6.png", alt: "Partner 3" },
 ];
 
@@ -54,7 +54,7 @@ const CombinedSection: React.FC = () => {
           to { transform: translateX(-33.33%); } /* Scroll exactly one full set */
         }
         .animate-scroll {
-          animation: scroll 10s linear infinite;
+          animation: scroll 12s linear infinite;
         }
       `}
       </style>

@@ -7,10 +7,11 @@ const ContactSection = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Contact Button (Floating Above) */}
-      <div className="absolute -top-4 md:-top-6 lg:-top-8 bg-[#6253A1] text-white px-6 py-3 rounded-full border-2 border-[#35A7E4] text-sm md:text-lg font-semibold z-10 
-      hover:bg-[#35A7E4] hover:border-[#6253A1] hover:text-black transition duration-300 ease-in-out">
+      <div className="absolute top-4 md:top-6 lg:top-8 bg-[hsl(252,32%,48%)] text-white px-6 py-3 rounded-full border-2 border-[#6135e4] text-sm md:text-lg font-semibold z-10 
+      hover:bg-[#3953c5] hover:border-[#6253A1] hover:text-black transition duration-300 ease-in-out">
        Contact
       </div>
+
 
 
       {/* Main Container */}

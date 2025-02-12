@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Loading: React.FC = () => {
+const Loader: React.FC = () => {
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Loading: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-gray-900 text-white">
-      <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-b-4 border-blue-500"></div>
+      <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-500"></div>
       <p className="mt-4 text-lg font-semibold">
         {isOffline ? "Reconnecting..." : "Loading..."}
       </p>
@@ -26,4 +26,4 @@ const Loading: React.FC = () => {
   );
 };
 
-export default Loading;
+export default Loader;
