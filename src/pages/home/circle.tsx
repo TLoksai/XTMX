@@ -33,9 +33,9 @@ const CircularBackgroundWithText: React.FC = () => {
     <div className="relative flex items-center justify-center w-full sm:h-screen mt-20 sm:mt-0 overflow-x-hidden">
       {/* Circular Background Image - Desktop */}
       <img
-        src="/images/Screenshot (189).png"
+        src="/images/circle2.png"
         alt="Circular Background"
-        className="hidden sm:block absolute w-[90%] h-[90%] object-contain sm:w-[80%] sm:h-[80%] sm:translate-x-10 sm:-top-12" 
+        className="hidden sm:block absolute w-[90%] h-[90%] object-contain sm:w-[70%] sm:h-[80%] sm:translate-x-10 sm:-top-12" 
       />
 
       {/* Circular Background Image - Mobile */}
@@ -53,15 +53,16 @@ const CircularBackgroundWithText: React.FC = () => {
           collaboration, and impact
         </h1>
         <p className="mt-2 text-xs sm:text-sm text-white max-w-lg mx-auto leading-relaxed">
-        Creating impact through excellence and seamless collaboration. 
+        <br/>Creating impact through excellence and seamless collaboration. <br/>
           <br className="hidden sm:block" />
           
         </p>
         <div className="mt-4 flex justify-center items-center">
-          <button className="px-4 py-2 bg-[#7F60ED] text-white rounded-full text-xs sm:text-sm font-semibold">
-            About Us
-          </button>
-        </div>
+  <button className="px-6 py-3 bg-[#7F60ED] text-white rounded-full text-xs sm:text-sm font-semibold ml-[-40px]">
+    About Us
+  </button>
+</div>
+
       </div>
     </div>
   );

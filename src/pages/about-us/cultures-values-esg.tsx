@@ -27,30 +27,46 @@ const HomePage: React.FC = () => {
 
           {/* First Section */}
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-            <div className="md:w-1/2 text-left">
-              <h3 className="text-xl font-bold">IGNITING THE <span className="text-purple-400">FUTURE</span></h3>
-              <p className="text-gray-300 mt-4">
-              At xTRansmatrix, we believe that the key to a transformative tomorrow lies in the passion of young minds and the right mix of GenZ and Change Agents. For our clients and their customers, our industry, and our communities, we challenge the status quo and embrace bold new perspectives. Through our can-do attitude, determination to think beyond boundaries, and commitment to revolutionizing the future of work, we reimagine what’s possible and build a lasting legacy for our clients. We are igniting the future by fusing innovation with an unwavering drive to create lasting impact.
-              </p>
-              <button className="mt-4 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full">Learn more →</button>
-            </div>
-            <div className="md:w-1/2 flex justify-center">
-              <img src="/images/about-us(Cultures)/1.png" alt="Future" className={IMAGE_SIZE} />
-            </div>
+  <div className="md:w-1/2 text-left">
+    <h3 className="text-xl font-bold">IGNITING THE <span className="text-purple-400">FUTURE</span></h3>
+    <p className="text-gray-300 mt-4 text-justify">
+      At xTRansmatrix, we believe that the key to a transformative tomorrow lies in the passion of young minds and the right mix of GenZ and Change Agents. For our clients and their customers, our industry, and our communities, we challenge the status quo and embrace bold new perspectives. Through our can-do attitude, determination to think beyond boundaries, and commitment to revolutionizing the future of work, we reimagine what’s possible and build a lasting legacy for our clients. We are igniting the future by fusing innovation with an unwavering drive to create lasting impact.
+    </p>
+    <button className="mt-4 px-6 py-2 bg-[#517AF5] hover:bg-[#4165CF] text-white font-semibold rounded-full">
+      Learn more →
+    </button>
+  </div>
+  <div className="md:w-1/2 flex justify-center">
+    <img
+      src="/images/about-us(Cultures)/1.png"
+      alt="Future"
+      className="w-96 md:w-[300px] h-auto"
+    />
+  </div>
+
           </div>
 
           {/* Second Section */}
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-            <div className="md:w-1/2 flex justify-center">
-              <img src="/images/about-us(Cultures)/2.png" alt="Equilibrium" className={IMAGE_SIZE} />
-            </div>
-            <div className="md:w-1/2 text-left">
-              <h3 className="text-xl font-bold">SOCIAL EQUILIBRIUM AT <span className="text-purple-400">THE WORK</span></h3>
-              <p className="text-gray-300 mt-4">
-              At xTRansmatrix, we believe that true innovation stems from the balance between individual authenticity and collective collaboration. We value the difference you make and the unique qualities that define you. Our #LearnWhileWork philosophy now embraces Social Equillibirium—a dynamic blend where diversity, equity, and inclusivity merge with a collaborative mindset among our clients and colleagues. This balanced approach is at the core of our success and is a value that every team member brings to life each day.
-              </p>
-              <button className="mt-4 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full">Learn more →</button>
-            </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img
+              src="/images/about-us(Cultures)/2.png"
+              alt="Future"
+              className="w-80 md:w-[300px] h-auto"
+            />
+          </div>
+
+          <div className="md:w-1/2 text-left">
+    <h3 className="text-xl font-bold">
+      SOCIAL EQUILIBRIUM AT <span className="text-purple-400">THE WORK</span>
+    </h3>
+    <p className="text-gray-300 mt-4 text-justify">
+      At xTRansmatrix, we believe that true innovation stems from the balance between individual authenticity and collective collaboration. We value the difference you make and the unique qualities that define you. Our #LearnWhileWork philosophy now embraces Social Equillibirium—a dynamic blend where diversity, equity, and inclusivity merge with a collaborative mindset among our clients and colleagues. This balanced approach is at the core of our success and is a value that every team member brings to life each day.
+    </p>
+    <button className="mt-4 px-6 py-2 bg-[#517AF5] hover:bg-[#4165CF] text-white font-semibold rounded-full">
+      Learn more →
+    </button>
+  </div>
           </div>
         </div>
       </section>
@@ -76,8 +92,8 @@ const HomePage: React.FC = () => {
               <h4 className="text-lg font-bold mt-4">Succeed Together</h4>
               <p className="text-gray-300 mt-2">
               Foster a collaborative environment built on integrity and excellence, where every success contributes to our collective legacy.
-              </p>
-              <button className="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
+              </p><br/>
+              <button className="mt-4 px-6 py-2 bg-[#517AF5] hover:bg-[#4165CF] text-white font-semibold rounded-full">
                 Learn more →
               </button>
             </div>
@@ -89,7 +105,7 @@ const HomePage: React.FC = () => {
               <p className="text-gray-300 mt-2">
               Innovate Boldly: Challenge conventional thinking and harness creativity to develop breakthrough solutions that set new standards.
               </p>
-              <button className="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
+              <button className="mt-4 px-6 py-2 bg-[#517AF5] hover:bg-[#4165CF] text-white font-semibold rounded-full">
                 Learn more →
               </button>
             </div>
@@ -100,8 +116,8 @@ const HomePage: React.FC = () => {
               <h4 className="text-lg font-bold mt-4">Innovate Boldly</h4>
               <p className="text-gray-300 mt-2">
               Challenge conventional thinking and harness creativity to develop breakthrough solutions that set new standards.
-              </p>
-              <button className="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full">
+              </p><br/>
+              <button className="mt-4 px-6 py-2 bg-[#517AF5] hover:bg-[#4165CF] text-white font-semibold rounded-full">
                 Learn more →
               </button>
             </div>

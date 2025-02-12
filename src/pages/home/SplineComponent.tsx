@@ -36,10 +36,12 @@ const SplineAndObjectives = () => {
 
         {/* Overlay Text for Desktop */}
         <div className="hidden md:flex absolute md:bottom-64 text-center text-white flex-col items-center px-4">
-          <h1 className="text-6xl font-bold leading-tight">
-          AI-Tech  Catalyst
+          <h1 className="text-6xl font-bold leading-tight drop-shadow-lg">
+            AI-Tech Catalyst
           </h1>
-          <h1 className="text-6xl font-bold leading-tight">Partner</h1>
+          <h1 className="text-6xl font-bold leading-tight drop-shadow-lg">
+            Partner
+          </h1>
           <p className="mt-3 text-sm text-gray-300 max-w-md text-center">
           Ignite your AI journey with precision data tagging and annotation – your catalyst for transformation.
           </p>
@@ -49,16 +51,21 @@ const SplineAndObjectives = () => {
       {/* Objectives Section */}
       <section className="text-white py-8 sm:py-12 px-4 sm:px-6 md:px-12 lg:px-20 text-center relative overflow-hidden">
         {/* Button */}
-        <div className="flex justify-center">
-          <button className="px-5 py-2 border border-purple-500 text-purple-400 rounded-full text-xs sm:text-sm md:text-base hover:bg-purple-600 hover:text-white transition">
-            Objectives
-          </button>
-        </div>
+        <div className="flex justify-center -mt-6">
+  <a href="/our-partners" className="px-5 py-2 bg-[#6253A1] bg-opacity-30 border border-purple-500 text-white rounded-full text-xs sm:text-sm md:text-base hover:bg-purple-700 hover:text-white transition">
+    Our Services
+  </a>
+</div>
+
+
+
+
 
         {/* Heading */}
-        <h2 className="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-extrabold text-white leading-snug mx-auto max-w-[90%] md:max-w-[1100px]">
+        <br/><h2 className="mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-extrabold text-white leading-snug mx-auto max-w-[90%] md:max-w-[1100px]">
           We are your <span className="text-[#A192FF]">strategic partner</span> —the dedicated channel that unlocks and accelerates your growth.
         </h2>
+        <br/>
 
         {/* Supporting Text */}
         <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-[90%] md:max-w-[900px] mx-auto text-gray-400 leading-relaxed">

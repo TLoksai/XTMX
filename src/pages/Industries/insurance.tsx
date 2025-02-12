@@ -7,9 +7,10 @@ const InsuranceSection: React.FC = () => {
       <div
         className="relative w-full h-[300px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
         style={{
-          backgroundImage: "url('/images/insurance-banner.png')",
+          backgroundImage: "url('/images/industries/insurance/1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed", // Parallax effect
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -25,12 +26,12 @@ const InsuranceSection: React.FC = () => {
               Strategic Expertise for a{" "}
               <span className="text-purple-400">Resilient Future</span>
             </h2>
-            <p className="text-gray-300 mt-4">
-              At XTRANSMATRIX, we provide expert consultancy services for the 
-              insurance industry, assisting leading insurers in streamlining 
-              operations, ensuring regulatory compliance, and enhancing risk 
-              management. Our deep industry expertise helps insurance providers 
-              optimize claims processing, improve customer experience, and adopt 
+            <p className="text-gray-300 mt-4 text-justify">
+              At XTRANSMATRIX, we provide expert consultancy services for the
+              insurance industry, assisting leading insurers in streamlining
+              operations, ensuring regulatory compliance, and enhancing risk
+              management. Our deep industry expertise helps insurance providers
+              optimize claims processing, improve customer experience, and adopt
               digital solutions for seamless policy management.
             </p>
             <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full flex items-center">
@@ -39,7 +40,7 @@ const InsuranceSection: React.FC = () => {
           </div>
           <div className="md:w-1/3 flex justify-center">
             <img
-              src="/images/insurance-strategy.png"
+              src="/images/industries/insurance/2.png"
               alt="Insurance Strategy"
               className="w-64 md:w-72"
             />
@@ -51,46 +52,46 @@ const InsuranceSection: React.FC = () => {
           <h3 className="text-lg md:text-xl font-semibold">
             Our Strategic Guidance
           </h3>
-          <p className="text-gray-300 mt-4">
-            With a strategic and technology-driven approach, we help insurance 
-            companies improve operational efficiency, reduce risks, and provide 
+          <p className="text-gray-300 mt-4 text-justify">
+            With a strategic and technology-driven approach, we help insurance
+            companies improve operational efficiency, reduce risks, and provide
             better financial protection to their customers.
           </p>
 
-          <ul className="list-disc text-gray-300 mt-6 space-y-3 pl-6 text-left mx-auto max-w-3xl">
+          <ul className="list-disc text-gray-300 mt-6 space-y-3 pl-6 text-justify mx-auto max-w-3xl">
             <li>
               <span className="text-white font-semibold">
                 Regulatory & Compliance Mastery:
               </span>{" "}
-              Navigate evolving insurance regulations with confidence, ensuring 
+              Navigate evolving insurance regulations with confidence, ensuring
               full compliance and industry best practices.
             </li>
             <li>
               <span className="text-white font-semibold">
                 Seamless Claims Processing:
               </span>{" "}
-              Accelerate claims settlements, enhance fraud detection, and 
+              Accelerate claims settlements, enhance fraud detection, and
               improve accuracy for a hassle-free customer experience.
             </li>
             <li>
               <span className="text-white font-semibold">
                 Advanced Risk & Underwriting Solutions:
               </span>{" "}
-              Strengthen risk assessment models and optimize policy pricing for 
+              Strengthen risk assessment models and optimize policy pricing for
               smarter, more profitable decision-making.
             </li>
             <li>
               <span className="text-white font-semibold">
                 AI-Powered Digital Transformation:
               </span>{" "}
-              Leverage cutting-edge automation and AI-driven solutions to 
+              Leverage cutting-edge automation and AI-driven solutions to
               streamline policy management and enhance customer interactions.
             </li>
             <li>
               <span className="text-white font-semibold">
                 Strategic Market Growth:
               </span>{" "}
-              Expand into new territories with data-driven strategies that 
+              Expand into new territories with data-driven strategies that
               enhance service offerings and increase market share.
             </li>
           </ul>

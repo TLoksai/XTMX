@@ -8,16 +8,24 @@ const Footer: React.FC = () => {
         
         {/* Left Section */}
         <div className="w-full md:w-1/3 space-y-4">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img src="/images/3-removebg-preview 1.png" alt="XTransmatrix Logo" className="h-10" />
-          </div>
+        <div className="flex items-center">
+  <a href="/" aria-label="XTransmatrix Home">
+    <img
+      src="/images/3-removebg-preview 1.png"
+      alt="XTransmatrix Logo"
+      className="h-10"
+    />
+  </a>
+</div>
 
-          {/* Business Statement */}
           <p className="text-lg font-semibold">
             We growing up your business <br /> with personal AI manager.
           </p>
           <p className="text-gray-400">Xtransmatrix, 2025.</p>
+          <div className="flex gap-4 mt-4">
+            <img src="/images/footer/1.png" alt="Image 1" className="h-14 w-auto" />
+            <img src="/images/footer/2.png" alt="Image 2" className="h-14 w-auto" />
+          </div>
         </div>
 
         {/* Middle Section - Links */}
@@ -25,9 +33,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-gray-400 font-semibold">Services</h4>
             <ul className="space-y-2 mt-2">
-              <li><a href="/forge-ai" className="hover:text-gray-300">Forge Ai</a></li>
-              <li><a href="perform-ai" className="hover:text-gray-300">Perform Ai</a></li>
-              <li><a href="/dvisorya" className="hover:text-gray-300">Advisory</a></li>
+              <li><a href="/forge-ai" className="hover:text-gray-300">Forge AI</a></li>
+              <li><a href="perform-ai" className="hover:text-gray-300">Perform AI</a></li>
+              <li><a href="/advisory" className="hover:text-gray-300">Advisory</a></li>
               <li><a href="/tech-squads" className="hover:text-gray-300">Tech Squads</a></li>
             </ul>
           </div>
@@ -40,13 +48,9 @@ const Footer: React.FC = () => {
               <li><a href="banking" className="hover:text-gray-300">Banking and Payment</a></li>
             </ul>
           </div>
-          
-          {/* Social Media Section */}
           <div>
             <h4 className="text-gray-400 font-semibold">Social Media</h4>
             <div className="flex space-x-4 mt-2">
-              
-              
               <a href="https://www.instagram.com/" className="hover:text-gray-300">
                 <FaInstagram size={18} />
               </a>
@@ -62,9 +66,9 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="bg-[#7F60ED] text-white py-4 mt-6 rounded-t-lg">
+      <div className="bg-[#7F60ED] text-white py-6 mt-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">© 2028 Xtransmatrix Inc. All rights reserved.</p>
+          <p className="text-sm">© 2025 Xtransmatrix Inc. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="hover:text-gray-300">Terms of Service</a>
             <a href="#" className="hover:text-gray-300">Privacy Policy</a>
@@ -72,6 +76,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+      
     </footer>
   );
 };

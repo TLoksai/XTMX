@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
   const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
 
-  // Close dropdowns when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -34,20 +34,18 @@ const Header = () => {
   const handleMouseLeave = () => {
     closeTimeout.current = setTimeout(() => {
       setOpenDropdown(null);
-    }, 200); // Delayed closing of 200ms
+    }, 200);
   };
 
   return (
     <header className="flex justify-center py-4">
       <nav className="flex items-center justify-between w-[90%] max-w-6xl px-6 py-2 bg-gray-700 text-white rounded-full relative z-50">
-        {/* Logo */}
         <div className="flex items-center z-50">
           <Link to="/">
-            <img src="/images/3-removebg-preview 1.png" alt="XTransmatrix" className="h-8 w-auto" />
+            <img src="/images/3-removebg-preview 1.png" alt="XTransmatrix" className="h-12 w-auto" />
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <button className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -57,7 +55,48 @@ const Header = () => {
           <ul className="absolute top-full left-0 w-full bg-gray-700 text-white rounded-lg shadow-lg p-4 space-y-4 text-center md:hidden">
             {["about", "services", "industries", "intelligence"].map((category) => (
               <li key={category} className="hover:text-[#5552FF]">
-                <Link to={`/${category}`}>{category.charAt(0).toUpperCase() + category.slice(1)}</Link>
+                <button onClick={() => setMobileSubmenu(mobileSubmenu === category ? null : category)}
+                  className="w-full text-left flex justify-between items-center px-4 py-2">
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                  <ChevronDown className={`ml-2 transform transition-transform ${mobileSubmenu === category ? "rotate-180" : ""}`} />
+                </button>
+
+                {/* Mobile Submenu */}
+                {mobileSubmenu === category && (
+                  <ul className="pl-6 space-y-2 text-sm">
+                    {category === "about" && (
+                      <>
+                        <li><Link to="/cultures-values-esg">Cultures, Values and ESG</Link></li>
+                        <li><Link to="/diversity-young-minds">Diversity by Young Minds</Link></li>
+                        <li><Link to="/recent-awards-recognition">Recent Awards and Recognition</Link></li>
+                        <li><Link to="/our-partners">Our Partners</Link></li>
+                      </>
+                    )}
+                    {category === "services" && (
+                      <>
+                        <li><Link to="/forge-ai">Forge AI</Link></li>
+                        <li><Link to="/perform-ai">Perform AI</Link></li>
+                        <li><Link to="/advisory">Advisory</Link></li>
+                        <li><Link to="/tech-squads">Tech Squads</Link></li>
+                      </>
+                    )}
+                    {category === "industries" && (
+                      <>
+                        <li><Link to="/medtech">MEDTECH</Link></li>
+                        <li><Link to="/automobile">Automobile</Link></li>
+                        <li><Link to="/insurance">Insurance</Link></li>
+                        <li><Link to="/banking">Banking and Payment</Link></li>
+                      </>
+                    )}
+                    {category === "intelligence" && (
+                      <>
+                        <li><Link to="/xtmx-intelligence">XTMX Intelligence</Link></li>
+                        <li><Link to="/events">Events</Link></li>
+                      </>
+                    )}
+                    
+                  </ul>
+                )}
               </li>
             ))}
             <li>
@@ -67,7 +106,6 @@ const Header = () => {
             </li>
           </ul>
         )}
-        
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-sm font-semibold">
@@ -84,77 +122,40 @@ const Header = () => {
                 <ChevronDown className="ml-2" />
               </li>
 
-              {/* Submenu */}
               {openDropdown === category && (
                 <ul
                   className="absolute bg-gray-700 text-white rounded-lg mt-2 p-4 shadow-lg space-y-2 text-sm w-64 text-center"
-                  onMouseEnter={() => handleMouseEnter(category)} // Prevents closing when moving into submenu
-                  onMouseLeave={handleMouseLeave} // Delays closing when moving out
+                  onMouseEnter={() => handleMouseEnter(category)}
+                  onMouseLeave={handleMouseLeave}
                 >
                   {category === "about" && (
                     <>
-                      <li>
-                        <Link to="/cultures-values-esg" className="hover:text-[#5552FF] py-2 block">
-                          Cultures, Values and ESG
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/diversity-young-minds" className="hover:text-[#5552FF] py-2 block">
-                          Diversity by Young Minds
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/recent-awards-recognition" className="hover:text-[#5552FF] py-2 block">
-                          Recent Awards and Recognition
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/our-partners" className="hover:text-[#5552FF] py-2 block">Our Partners</Link>
-                      </li>
+                      <li><Link to="/cultures-values-esg">Cultures, Values and ESG</Link></li>
+                      <li><Link to="/diversity-young-minds">Diversity by Young Minds</Link></li>
+                      <li><Link to="/recent-awards-recognition">Recent Awards and Recognition</Link></li>
+                      <li><Link to="/our-partners">Our Partners</Link></li>
                     </>
                   )}
                   {category === "services" && (
                     <>
-                      <li>
-                        <Link to="/forge-ai" className="hover:text-[#5552FF] py-2 block">Forge AI</Link>
-                      </li>
-                      <li>
-                        <Link to="/perform-ai" className="hover:text-[#5552FF] py-2 block">Perform AI</Link>
-                      </li>
-                      <li>
-                        <Link to="/advisory" className="hover:text-[#5552FF] py-2 block">Advisory</Link>
-                      </li>
-                      <li>
-                        <Link to="/tech-squads" className="hover:text-[#5552FF] py-2 block">Tech Squads</Link>
-                      </li>
+                      <li><Link to="/forge-ai">Forge AI</Link></li>
+                      <li><Link to="/perform-ai">Perform AI</Link></li>
+                      <li><Link to="/advisory">Advisory</Link></li>
+                      <li><Link to="/tech-squads">Tech Squads</Link></li>
                     </>
                   )}
                   {category === "industries" && (
                     <>
-                      <li>
-                        <Link to="/medtech" className="hover:text-[#5552FF] py-2 block">MEDTECH</Link>
-                      </li>
-                      <li>
-                        <Link to="/automobile" className="hover:text-[#5552FF] py-2 block">Automobile</Link>
-                      </li>
-                      <li>
-                        <Link to="/insurance" className="hover:text-[#5552FF] py-2 block">Insurance</Link>
-                      </li>
-                      <li>
-                        <Link to="/banking" className="hover:text-[#5552FF] py-2 block">Banking and Payment</Link>
-                      </li>
+                      <li><Link to="/medtech">MEDTECH</Link></li>
+                      <li><Link to="/automobile">Automobile</Link></li>
+                      <li><Link to="/insurance">Insurance</Link></li>
+                      <li><Link to="/banking">Banking and Payment</Link></li>
                     </>
                   )}
                   {category === "intelligence" && (
                     <>
-                      <li>
-                        <Link to="/xtmx-intelligence" className="hover:text-[#5552FF] py-2 block">
-                          XTMX Intelligence
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/events" className="hover:text-[#5552FF] py-2 block">Events</Link>
-                      </li>
+                      <li><Link to="/xtmx-intelligence">XTMX Intelligence</Link></li>
+                      <li><Link to="/events">Events</Link></li>
                     </>
                   )}
                 </ul>
@@ -163,11 +164,7 @@ const Header = () => {
           ))}
         </ul>
 
-        {/* "Let's Connect" Button */}
-        <Link
-          to="/contact"
-          className="hidden md:flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-full text-white font-semibold"
-        >
+        <Link to="/contact" className="hidden md:flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-full text-white font-semibold">
           Let’s Connect
           <ArrowUpRight className="h-5 w-5 text-blue-400" />
         </Link>

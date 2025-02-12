@@ -9,8 +9,8 @@ const AIInferenceSection: React.FC = () => {
         
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold leading-tight">
-          <span className="text-[#B296F1]">AI-Powered: Elevating Data </span>
-          <span className="text-white">Annotation, Tagging & AI Prompts.</span>
+          <span className="text-[#B296F1]">AI-Powered: Elevating  </span>
+          <span className="text-white"> Data Annotation, Tagging & AI Prompts.</span>
         </h1>
 
         {/* Objectives Button */}

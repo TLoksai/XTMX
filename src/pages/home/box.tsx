@@ -11,9 +11,9 @@ const FeatureSection = () => {
           <span className="text-[#B296F1]">Agentic AI Interference</span> that scales
           <br />
           Med Tech
-        </h1>
-        <button className="mt-4 px-4 py-2 bg-[#7F60ED] text-white rounded-full text-sm font-semibold">
-          MedTech
+        </h1><br/><br/><br/>
+        <button className="mt-4 px-8 py-4 bg-[#7F60ED] text-white rounded-full text-sm font-semibold">
+          MED TECH
         </button>
       </div>
 

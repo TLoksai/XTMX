@@ -26,13 +26,12 @@ const AwardsList = [
 const AwardsSection: React.FC = () => {
   return (
     <section className="bg-[#0a0214] text-white">
-      {/* Banner Section with Parallax Effect */}
+      {/* Banner Section with Smaller Hero Image */}
       <div
-        className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4 bg-fixed"
+        className="relative w-full h-200px] md:h-[300px] flex items-center justify-center text-white text-2xl md:text-3xl font-bold text-center px-4 bg-fixed"
         style={{
           backgroundImage: "url('/images/recent-awards-recognition/hero.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -53,7 +52,7 @@ const AwardsSection: React.FC = () => {
                 {award.title.split("from")[0]}{" "}
                 <span className="text-purple-400">{award.title.split("from")[1]}</span>
               </h2>
-              <p className="text-gray-300 mt-4">{award.description}</p>
+              <p className="text-gray-300 mt-4 text-justify">{award.description}</p>
               <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full flex items-center">
                 Learn more →
               </button>

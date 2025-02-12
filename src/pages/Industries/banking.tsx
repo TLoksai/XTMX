@@ -7,9 +7,10 @@ const BankingPaymentsSection: React.FC = () => {
       <div
         className="relative w-full h-[300px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
         style={{
-          backgroundImage: "url('/images/banking-payments-banner.png')",
+          backgroundImage: "url('/images/industries/banking/1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed", // Parallax effect
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -25,12 +26,13 @@ const BankingPaymentsSection: React.FC = () => {
               Strategic Guidance for{" "}
               <span className="text-purple-400">Financial Excellence</span>
             </h2>
-            <p className="text-gray-300 mt-4">
-              At XTRANSMATRIX, we provide expert consultancy services for the insurance industry, 
-              assisting leading insurers in streamlining operations, ensuring regulatory compliance, 
-              and enhancing risk management. Our deep industry expertise helps insurance providers 
-              optimize claims processing, improve customer experience, and adopt digital solutions 
-              for seamless policy management.
+            <p className="text-gray-300 mt-4 text-justify">
+              At XTRANSMATRIX, we offer expert consultancy services to banking
+              and payment providers, helping them optimize operations, ensure
+              regulatory compliance, and adopt modern digital payment
+              solutions. Our deep financial industry knowledge enables
+              institutions to enhance customer experiences, secure transactions,
+              and achieve operational excellence in a competitive market.
             </p>
             <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full flex items-center">
               Learn more →
@@ -38,7 +40,7 @@ const BankingPaymentsSection: React.FC = () => {
           </div>
           <div className="md:w-1/3 flex justify-center">
             <img
-              src="/images/financial-growth.png"
+              src="/images/industries/banking/2.png"
               alt="Financial Growth"
               className="w-64 md:w-72"
             />
@@ -50,47 +52,47 @@ const BankingPaymentsSection: React.FC = () => {
           <h3 className="text-lg md:text-xl font-semibold">
             Our Strategic Guidance
           </h3>
-          <p className="text-gray-300 mt-4">
-            With a strategic and technology-driven approach, we help insurance 
-            companies improve operational efficiency, reduce risks, and provide 
-            better financial protection to their customers.
+          <p className="text-gray-300 mt-4 text-justify">
+            We provide cutting-edge insights to help financial institutions
+            adopt new technologies, enhance security, and expand their market
+            reach.
           </p>
 
-          <ul className="list-disc text-gray-300 mt-6 space-y-3 pl-6 text-left mx-auto max-w-3xl">
+          <ul className="list-disc text-gray-300 mt-6 space-y-3 pl-6 text-justify mx-auto max-w-3xl">
             <li>
               <span className="text-white font-semibold">
-                Regulatory & Compliance Mastery:
+                Compliance & Regulatory Support:
               </span>{" "}
-              Navigate evolving insurance regulations with confidence, ensuring 
-              full compliance and industry best practices.
+              Navigate complex regulations to maintain compliance and ensure
+              operational continuity.
             </li>
             <li>
               <span className="text-white font-semibold">
-                Seamless Claims Processing:
+                Payment Innovation:
               </span>{" "}
-              Accelerate claims settlements, enhance fraud detection, and 
-              improve accuracy for a hassle-free customer experience.
+              Implement advanced digital payment solutions to meet modern
+              customer demands and enhance transaction speed.
             </li>
             <li>
               <span className="text-white font-semibold">
-                Advanced Risk & Underwriting Solutions:
+                Cybersecurity & Fraud Prevention:
               </span>{" "}
-              Strengthen risk assessment models and optimize policy pricing for 
-              smarter, more profitable decision-making.
+              Strengthen security protocols and adopt AI-driven fraud detection
+              systems for secure transactions.
             </li>
             <li>
               <span className="text-white font-semibold">
-                AI-Powered Digital Transformation:
+                Customer-Centric Experiences:
               </span>{" "}
-              Leverage cutting-edge automation and AI-driven solutions to 
-              streamline policy management and enhance customer interactions.
+              Optimize user journeys with data-driven insights to improve
+              banking services and satisfaction.
             </li>
             <li>
               <span className="text-white font-semibold">
-                Strategic Market Growth:
+                Strategic Growth & Expansion:
               </span>{" "}
-              Expand into new territories with data-driven strategies that 
-              enhance service offerings and increase market share.
+              Identify new market opportunities and expand services with
+              tailored financial strategies.
             </li>
           </ul>
         </div>

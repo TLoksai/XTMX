@@ -1,0 +1,18 @@
+footer {
+    margin-top: 0; /* Ensure no margin between sections */
+  }
+  
+  .main-content { /* Replace with the parent container class */
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+  }
+  

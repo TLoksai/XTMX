@@ -5,11 +5,12 @@ const AutomobileSection: React.FC = () => {
     <section className="bg-[#0a0214] text-white">
       {/* Banner Section */}
       <div
-        className="relative w-full h-[300px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
+        className="relative w-full h-[500px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
         style={{
-          backgroundImage: "url('/images/automobile-banner.png')",
+          backgroundImage: "url('/images/industries/automobile/1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed", // Parallax effect
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -25,14 +26,14 @@ const AutomobileSection: React.FC = () => {
               Expert Guidance for{" "}
               <span className="text-purple-400">Automotive Excellence</span>
             </h2>
-            <p className="text-gray-300 mt-4">
-              At XTRANSMATRIX, we provide comprehensive strategic services for the automobile 
-              industry, supporting global manufacturers like Volkswagen in streamlining operations, 
+            <p className="text-gray-300 mt-4 text-justify">
+              At XTRANSMATRIX, we provide comprehensive strategic services for the automobile
+              industry, supporting global manufacturers like Volkswagen in streamlining operations,
               improving efficiency, and ensuring compliance with industry regulations.
             </p>
-            <p className="text-gray-300 mt-4">
-              Our expertise helps automotive companies enhance production processes, reduce costs, 
-              and navigate complex market challenges while maintaining high standards of quality 
+            <p className="text-gray-300 mt-4 text-justify">
+              Our expertise helps automotive companies enhance production processes, reduce costs,
+              and navigate complex market challenges while maintaining high standards of quality
               and performance.
             </p>
             <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full flex items-center">
@@ -41,7 +42,7 @@ const AutomobileSection: React.FC = () => {
           </div>
           <div className="md:w-1/3 flex justify-center">
             <img
-              src="/images/automobile-strategy.png"
+              src="/images/industries/automobile/2.png"
               alt="Automobile Strategy"
               className="w-64 md:w-72"
             />
@@ -53,12 +54,12 @@ const AutomobileSection: React.FC = () => {
           <h3 className="text-lg md:text-xl font-semibold">
             Our Strategic Guidance
           </h3>
-          <p className="text-gray-300 mt-4">
-            With a deep understanding of the automotive sector, we help manufacturers stay 
+          <p className="text-gray-300 mt-4 text-justify">
+            With a deep understanding of the automotive sector, we help manufacturers stay
             competitive by ensuring operational excellence and regulatory compliance.
           </p>
 
-          <ul className="list-disc text-gray-300 mt-6 space-y-3 pl-6 text-left mx-auto max-w-3xl">
+          <ul className="list-disc text-gray-300 mt-6 space-y-3 pl-6 text-justify">
             <li>
               <span className="text-white font-semibold">
                 Manufacturing Process Optimization:
