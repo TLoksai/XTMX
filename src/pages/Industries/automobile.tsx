@@ -5,13 +5,15 @@ const AutomobileSection: React.FC = () => {
     <section className="bg-[#0a0214] text-white font-inter">
       {/* Banner Section */}
       <div
-        className="relative w-full h-[500px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
-        style={{
-          backgroundImage: "url('/images/industries/automobile/1.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed", // Parallax effect
-        }}
+       className="relative w-full h-[600px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4 -mt-4"
+       style={{
+         backgroundImage: "url('/images/industries/automobile/1.png')",
+         backgroundSize: "contain", // Scales the image proportionally
+         backgroundPosition: "center center",
+         backgroundRepeat: "no-repeat",
+         backgroundAttachment: "fixed", // Parallax effect
+       }}
+       
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <h1 className="relative z-10 uppercase">Automobile</h1>

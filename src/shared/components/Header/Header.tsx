@@ -38,9 +38,9 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-center py-4">
-      <nav className="flex items-center justify-between w-[90%] max-w-6xl px-6 py-2 bg-gray-700 text-white rounded-full relative z-50">
-        <div className="flex items-center z-50">
+    <header className="flex justify-center py-4 ">
+      <nav className="flex items-center justify-between w-[90%] max-w-6xl px-6 py-2 bg-gray-700 text-white rounded-full relative z-50 ">
+        <div className="flex items-center z-50 ">
           <Link to="/">
             <img src="/images/3-removebg-preview 1.png" alt="XTransmatrix" className="h-12 w-auto" />
           </Link>

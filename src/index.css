@@ -19,3 +19,14 @@ html, body {
     flex-direction: column;
   }
   
+/* Remove default body margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent content from hiding behind the fixed header */
+main {
+  padding-top: 20px; /* Adjust this if your header height changes */
+}
