@@ -5,7 +5,7 @@ const IMAGE_ALIGNMENT = "justify-end"; // Change to "justify-start", "justify-ce
 
 const DiversitySection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white">
+    <section className="bg-[#0a0214] text-white font-inter">
       {/* Banner Section with Parallax Effect */}
       <div className="relative w-full h-[200px] md:h-[300px] overflow-hidden">
         <div
@@ -25,7 +25,7 @@ const DiversitySection: React.FC = () => {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-screen-lg mx-auto px-6 md:px-12 py-16 flex flex-col md:flex-row items-center gap-8">
+      <div className="max-w-screen-lg mx-auto px-6 md:px-12 py-16 flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="md:w-1/2">
           <h2 className="text-xl md:text-2xl font-bold">
             Diversity by <span className="text-purple-400">Young Minds</span>

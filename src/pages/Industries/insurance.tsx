@@ -2,15 +2,16 @@ import React from "react";
 
 const InsuranceSection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white">
+    <section className="bg-[#0a0214] text-white font-inter">
       {/* Banner Section */}
       <div
-        className="relative w-full h-[300px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
+        className="relative w-full h-[400px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
         style={{
           backgroundImage: "url('/images/industries/insurance/1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed", // Parallax effect
+          backgroundRepeat: "no-repeat", // Ensures the image doesn't repeat
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />

@@ -2,7 +2,7 @@ import React from "react";
 
 const PerformAISection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white">
+    <section className="bg-[#0a0214] text-white font-sans">
       {/* Banner Section with Parallax Effect */}
       <div
         className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4 bg-fixed"

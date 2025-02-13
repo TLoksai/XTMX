@@ -25,11 +25,17 @@ const partnersList = [
     logo: "/images/our-partners/4.png",
     link: "https://www.collaborativeframeworks.com//", // Add the specific link
   },
+  {
+    name: "INNOTERN",
+    description: `Innotern is a platform designed to bridge the gap between academia and industry by offering internship opportunities, training programs, and business collaborations. It specializes in VLSI (Very Large Scale Integration) training, helping engineers gain hands-on experience in frontend design, digital training, live projects, and industry-relevant tools like Cadence, Synopsys, and Xilinx. The platform also fosters an AI community where students and professionals can collaborate on cutting-edge AI technologies. Additionally, Innotern's ProfitStream initiative connects innovative minds with industry leaders for mentorship and entrepreneurial ventures.`,
+    logo: "/images/our-partners/5.png",
+    link: "https://www.innotern.com/", // Add the specific link
+  },
 ];
 
 const PartnersSection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white py-20"> {/* Increased padding for the entire section */}
+    <section className="bg-[#0a0214] text-white py-20 font-sans"> {/* Added font-sans */}
       {/* Banner Section with Parallax Effect */}
       <div
         className="relative w-full h-[200px] md:h-[500px] flex items-center justify-center text-white text-3xl md:text-6xl font-bold text-center px-4 bg-fixed"
@@ -49,7 +55,7 @@ const PartnersSection: React.FC = () => {
         {partnersList.map((partner, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center gap-8 mb-20" // Increased the bottom margin here
+            className="flex flex-col md:flex-row items-center gap-8 mb-20"
           >
             <div className="md:w-1/4 flex justify-center">
               <img src={partner.logo} alt={partner.name} className="w-32 md:w-40" />
@@ -72,6 +78,7 @@ const PartnersSection: React.FC = () => {
     </section>
   );
 };
+
 
 
 export default PartnersSection;

@@ -29,6 +29,7 @@ const Services: React.FC = () => {
 </button>
 
 
+
 </a>
 
 
@@ -89,6 +90,7 @@ const Services: React.FC = () => {
               Building high-performance tech squads that drive innovation,<br/>
                deliver solutions, and accelerate business growth with agile expertise.
             </p>
+            
             <img 
   src="/images/services/techbros1.png" 
   alt="Tech Bros" 
@@ -96,6 +98,7 @@ const Services: React.FC = () => {
 />
 
           <a href="/tech-squads">
+          
           <button className="px-4 py-2 bg-[#5552FF] hover:bg-[#4640E6] rounded-full text-white font-semibold text-sm w-28 transition">
   Get Started
 </button>

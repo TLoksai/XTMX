@@ -2,7 +2,7 @@ import React from "react";
 
 const TechSquadsAndExpertise: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white">
+    <section className="bg-[#0a0214] text-white font-inter">
       {/* Banner Section with Parallax Effect */}
       <div
         className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4 bg-fixed"
@@ -36,10 +36,7 @@ const TechSquadsAndExpertise: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 mt-12">
-          <div className="md:w-1/3 flex justify-center">
-            <img src="/images/services1/tech-squads/3.png" alt="Tech Squads" className="w-64 md:w-72" />
-          </div>
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8 mt-12">
           <div className="md:w-2/3">
             <p className="text-gray-300" style={{ textAlign: "justify" }}>
               Operating from Bangalore—the Silicon Valley of India—and Mangalore, our TECH SQUADS are strategically established to provide the right mix of skills, agility, and insight.
@@ -47,6 +44,9 @@ const TechSquadsAndExpertise: React.FC = () => {
             <p className="text-gray-300 mt-4" style={{ textAlign: "justify" }}>
               This dual-location approach ensures that we consistently deliver cutting-edge solutions and exceptional value, empowering organizations to transform their technology landscape with confidence.
             </p>
+          </div>
+          <div className="md:w-1/3 flex justify-center">
+            <img src="/images/services1/tech-squads/3.png" alt="Tech Squads" className="w-64 md:w-72" />
           </div>
         </div>
 
@@ -58,8 +58,7 @@ const TechSquadsAndExpertise: React.FC = () => {
       </div>
 
       {/* Expertise Section */}
-           {/* Expertise Section */}
-           <div className="max-w-screen-lg mx-auto px-6 md:px-12 py-16">
+      <div className="max-w-screen-lg mx-auto px-6 md:px-12 py-16">
         <h2 className="text-xl md:text-2xl font-bold" style={{ textAlign: "justify" }}>
           We harness the power of cutting-edge technologies to drive innovation and deliver transformative solutions.
         </h2>
@@ -86,7 +85,6 @@ const TechSquadsAndExpertise: React.FC = () => {
           </li>
         </ul>
       </div>
-
     </section>
   );
 };

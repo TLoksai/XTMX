@@ -2,7 +2,7 @@ import React from "react";
 
 const AutomobileSection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white">
+    <section className="bg-[#0a0214] text-white font-inter">
       {/* Banner Section */}
       <div
         className="relative w-full h-[500px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"

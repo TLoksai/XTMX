@@ -1,6 +1,8 @@
+import React from "react";
+
 const XtmxEventsSection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white">
+    <section className="bg-[#0a0214] text-white font-inter">
       {/* Banner Section */}
       <div
         className="relative w-full h-[500px] flex items-center justify-center text-white text-3xl md:text-4xl font-bold text-center px-4"
@@ -59,7 +61,7 @@ const XtmxEventsSection: React.FC = () => {
         </div>
 
         {/* Profit Stream Through Collaboration */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mt-16">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 mt-16">
           <div className="md:w-1/3 flex justify-center">
             <img
               src="/images/Intelligence/Events/3.png"
