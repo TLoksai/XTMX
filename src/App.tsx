@@ -14,6 +14,9 @@ const Team = lazy(() => import("./pages/home/team"));
 const Contact = lazy(() => import("./pages/home/contact"));
 
 const CulturesValuesESG = lazy(() => import("./pages/about-us/cultures-values-esg"));
+const Future = lazy(() => import("./pages/about-us/future"));
+const Thework = lazy(() => import("./pages/about-us/thework"));
+
 const DiversityYoungMinds = lazy(() => import("./pages/about-us/diversity-young-minds"));
 const RecentAwardsRecognition = lazy(() => import("./pages/about-us/recent-awards-recognition"));
 const OurPartners = lazy(() => import("./pages/about-us/our-partners"));
@@ -30,10 +33,8 @@ const Banking = lazy(() => import("./pages/Industries/banking"));
 
 const XTMXIntelligence = lazy(() => import("./pages/Intelligence/xtmx-intelligence"));
 const Events = lazy(() => import("./pages/Intelligence/events"));
-{/*
-const Technologies = lazy(() => import("./pages/technologies"));
-const Career = lazy(() => import("./pages/career"));
-*/}
+const NotFound = lazy(() => import("./pages/notfound"));
+
 const App: React.FC = () => {
   return (
     <Router>
@@ -59,6 +60,8 @@ const App: React.FC = () => {
 
             {/* About Us */}
             <Route path="/cultures-values-esg" element={<CulturesValuesESG />} />
+            <Route path="/thework" element={<Thework />} />
+            <Route path="/future" element={<Future />} />
             <Route path="/diversity-young-minds" element={<DiversityYoungMinds />} />
             <Route path="/recent-awards-recognition" element={<RecentAwardsRecognition />} />
             <Route path="/our-partners" element={<OurPartners />} />
@@ -70,20 +73,18 @@ const App: React.FC = () => {
             <Route path="/tech-squads" element={<TechSquads />} />
          
             {/* Industries */}
-           <Route path="/medtech" element={<MedTech />} />
+            <Route path="/medtech" element={<MedTech />} />
             <Route path="/automobile" element={<Automobile />} />
             <Route path="/insurance" element={<Insurance />} />
             <Route path="/banking" element={<Banking />} />
 
             {/* Intelligence */}
-             <Route path="/xtmx-intelligence" element={<XTMXIntelligence />} />
+            <Route path="/xtmx-intelligence" element={<XTMXIntelligence />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
  
-            {/* Other Pages */}
-             {/*<Route path="/technologies" element={<Technologies />} />
-            <Route path="/career" element={<Career />} />
-*/}       
+            {/* 404 Page */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </Layout>
