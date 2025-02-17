@@ -53,7 +53,7 @@ const SplineAndObjectives = () => {
         {/* Button */}
         <div className="flex justify-center -mt-6">
   <a href="/our-partners" className="px-5 py-2 bg-[#6253A1] bg-opacity-30 border border-purple-500 text-white rounded-full text-xs sm:text-sm md:text-base hover:bg-purple-700 hover:text-white transition">
-    Our Services
+    Our Partners
   </a>
 </div>
 
