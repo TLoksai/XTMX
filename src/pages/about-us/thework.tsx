@@ -4,29 +4,29 @@ const HeroSection = () => {
         {/* Hero Image */}
         <div className="relative">
           <img
-            src="/images/about-us(Cultures)/learnmore/thework/hero.png"
+            src="/images/about-us(Cultures)/learnmore/thework/hero1.jpg"
             alt="Hero"
-            className="w-full object-cover h-[700px]"
+            className="w-full object-cover h-[700px] md:h-[500px] sm:h-[400px]"
           />
           {/* Overlay Image */}
           <img
             src="/images/about-us(Cultures)/learnmore/thework/over.png"
             alt="Overlay Image"
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-30"
           />
           <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-center">
             Embracing Social Equilibrium at <br />
             Work: The xTRansmatrix Way
           </h1>
         </div>
-  
+
         {/* Intro Text */}
         <div className="px-4 md:px-16 py-8 text-center">
           <p className="text-lg md:text-xl leading-relaxed">
             At xTRansmatrix, we believe that innovation isn’t just about technology or ideas—it’s about people. True innovation stems from finding the balance between individual authenticity and collective collaboration. We’re excited to share how our philosophy of Social Equilibrium at Work is reshaping the way we think, learn, and grow together.
           </p>
         </div>
-  
+
         {/* Cards Section */}
         <div className="px-4 md:px-16 py-12 flex flex-col items-center gap-12">
           {[ 
@@ -34,31 +34,31 @@ const HeroSection = () => {
               title: "The Power of Authenticity and Collaboration",
               description:
                 "Every person brings a unique set of skills, perspectives, and experiences to the table. At xTRansmatrix, we celebrate these differences, knowing that the unique qualities you contribute are the very essence of creativity and progress. We value individual authenticity, recognizing that when each team member is encouraged to be themselves, the result is a more dynamic and innovative workplace.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/1.png",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/11.jpg",
             },
             {
               title: "LearnWhileWork: A Philosophy for Growth",
               description:
                 "Our LearnWhileWork philosophy is all about continuous growth. It’s a commitment to learning and evolving, both as individuals and as a community. Integrating Social Equilibrium into this philosophy means that while we pursue personal and professional development, we also nurture an environment where diversity, equity, and inclusivity are not just buzzwords—they are the core of our daily interactions.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/2.png",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/22.jpg",
             },
             {
               title: "Diversity, Equity, and Inclusivity: The Cornerstones of Success",
               description:
                 "Social Equilibrium is more than a concept; it’s a commitment to building a workplace where everyone feels valued and empowered. By merging diversity, equity, and inclusivity with a collaborative mindset, we create an environment where innovative ideas flourish. This balanced approach drives our success and sets the stage for groundbreaking solutions that benefit our clients, our industry, and our communities.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/3.png",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/33.jpg",
             },
             {
               title: "The impact of Social Equilibrium",
               description:
                 "Enhanced Creativity: When individuals are free to express their authentic selves, creative ideas emerge naturally. Stronger Team Bonds: By valuing each person’s unique contributions, we foster a sense of belonging and mutual respect that strengthens our teamwork. Continuous Learning: Our commitment to #LearnWhileWork ensures that every day is an opportunity to grow, adapt, and improve—both individually and collectively. Resilient Innovation: A diverse and inclusive environment leads to more robust problem-solving. We’re better equipped to navigate challenges and seize new opportunities.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/4.png",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/44.jpg",
             },
             {
-              title: "Join  us Journey",
+              title: "Join us Journey",
               description:
                 "At xTRansmatrix, Social Equilibrium isn’t just an idea—it’s a way of life. It’s a balanced approach that underpins every success story and every breakthrough innovation. We invite you to be a part of this journey. Whether you’re a client, a colleague, or someone passionate about a collaborative and inclusive future, there’s a place for you in our community.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/5.png",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/55.jpg",
             },
           ].map((card, index) => (
             <div
@@ -67,31 +67,15 @@ const HeroSection = () => {
             >
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/60 rounded-lg"></div>
-  
+
               {/* Text Section */}
               <div className="md:w-1/2 p-4 relative z-10">
                 <h2 className="text-2xl font-bold mb-4">
-                  {card.title.split(" ").map((word, i) => {
-                    if (
-                      word.toLowerCase() === "Authenticity and Collaboration" ||
-                      word.toLowerCase() === "A Philosophy for Growth" ||
-                      word.toLowerCase() === "The Cornerstones of Success" ||
-                      word.toLowerCase() === "social equilibrium" ||
-                      word.toLowerCase() === "journey"
-                    ) {
-                      return (
-                        <span key={i} className="text-purple-600">
-                          {word}
-                        </span>
-                      );
-                    } else {
-                      return <span key={i}>{word} </span>;
-                    }
-                  })}
+                  {card.title}
                 </h2>
-                <p>{card.description}</p>
+                <p className="text-justify">{card.description}</p>
               </div>
-  
+
               {/* Image Section */}
               <div className="md:w-1/2 p-4 flex justify-center relative z-10">
                 <img
@@ -102,19 +86,19 @@ const HeroSection = () => {
               </div>
             </div>
           ))}
-  
+
           <div className="px-4 md:px-16 py-8 text-center">
             <p className="text-lg md:text-xl leading-relaxed">
               Discover more about our journey, our innovations, and how we’re shaping the future of work at xTRansmatrix. Stay connected and let’s learn while we work—together.
             </p>
           </div>
         </div>
-  
+
         {/* Contact Section */}
         <section className="relative flex justify-center px-4 sm:px-6 md:px-16 lg:px-24 py-24 sm:py-32 text-white bg-[url('/images/contact.png')] bg-[length:80%] bg-center bg-no-repeat">
           {/* Overlay (Optional for Better Readability) */}
           <div className="absolute inset-0 bg-black/50"></div>
-  
+
           {/* Contact Button (Floating Above) */}
           <div
             className="absolute top-6 sm:top-8 md:top-12 lg:top-16 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full border-2 border-[#35A7E4] text-xs sm:text-sm md:text-lg font-semibold z-10 hover:bg-[#3953C5] hover:border-[#6253A1]"
@@ -122,14 +106,14 @@ const HeroSection = () => {
           >
             Contact
           </div>
-  
+
           {/* Main Container */}
           <div className="w-full sm:w-5/6 md:w-4/5 bg-black p-6 sm:p-10 rounded-lg shadow-lg border-2 border-[#7F60ED] flex flex-col md:flex-row mt-12 sm:mt-16 relative z-10">
             {/* Contact Form */}
             <div className="w-full md:w-1/2 flex flex-col items-center px-4 sm:px-8 py-6 sm:py-12">
               <div className="w-full max-w-md">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-center">Get in touch with us</h2>
-  
+
                 {/* Message Box */}
                 <div className="flex items-center space-x-3 sm:space-x-4 bg-[#1e1e38] p-4 sm:p-5 rounded-lg mt-6 sm:mt-8">
                   <img src="/images/Ellipse 6.png" alt="User Avatar" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full" />
@@ -138,7 +122,7 @@ const HeroSection = () => {
                     <span className="text-[#B296F1]"> hello@xtransmatrix.com</span>.
                   </p>
                 </div>
-  
+
                 {/* Form Fields */}
                 <form className="space-y-4 sm:space-y-6 mt-6 sm:mt-10">
                   <input
@@ -161,7 +145,7 @@ const HeroSection = () => {
                 </form>
               </div>
             </div>
-  
+
             {/* Map Section */}
             <div className="w-full md:w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-10 md:mt-0 h-64 sm:h-auto">
               <iframe
@@ -176,6 +160,5 @@ const HeroSection = () => {
       </section>
     );
   };
-  
+
   export default HeroSection;
-  
