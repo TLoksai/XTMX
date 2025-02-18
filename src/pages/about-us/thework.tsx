@@ -2,23 +2,26 @@ const HeroSection = () => {
     return (
       <section className="#080412 text-white">
         {/* Hero Image */}
-        <div className="relative">
-          <img
-            src="/images/about-us(Cultures)/learnmore/thework/hero1.jpg"
-            alt="Hero"
-            className="w-full object-cover h-[700px] md:h-[500px] sm:h-[400px]"
-          />
-          {/* Overlay Image */}
-          <img
-            src="/images/about-us(Cultures)/learnmore/thework/over.png"
-            alt="Overlay Image"
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-30"
-          />
-          <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-center">
-            Embracing Social Equilibrium at <br />
-            Work: The xTRansmatrix Way
-          </h1>
-        </div>
+            {/* Hero Image with Parallax Effect */}
+      <div
+        className="relative bg-fixed bg-center bg-cover h-[700px] md:h-[600px] sm:h-[400px]"
+        style={{
+          backgroundImage: "url('/images/about-us(Cultures)/learnmore/thework/hero2.jpg')",
+        }}
+      >
+        {/* Overlay Image */}
+        <img
+          src="/images/about-us(Cultures)/learnmore/thework/over.png"
+          alt="Overlay Image"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
+        />
+
+        {/* Heading */}
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-center">
+          Embracing Social Equilibrium at <br />
+          Work: The xTransMatrix Way
+        </h1>
+      </div>
 
         {/* Intro Text */}
         <div className="px-4 md:px-16 py-8 text-center">
@@ -34,13 +37,13 @@ const HeroSection = () => {
               title: "The Power of Authenticity and Collaboration",
               description:
                 "Every person brings a unique set of skills, perspectives, and experiences to the table. At xTRansmatrix, we celebrate these differences, knowing that the unique qualities you contribute are the very essence of creativity and progress. We value individual authenticity, recognizing that when each team member is encouraged to be themselves, the result is a more dynamic and innovative workplace.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/11.jpg",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/collaboration2.jpg",
             },
             {
               title: "LearnWhileWork: A Philosophy for Growth",
               description:
                 "Our LearnWhileWork philosophy is all about continuous growth. It’s a commitment to learning and evolving, both as individuals and as a community. Integrating Social Equilibrium into this philosophy means that while we pursue personal and professional development, we also nurture an environment where diversity, equity, and inclusivity are not just buzzwords—they are the core of our daily interactions.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/22.jpg",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/growth.jpg",
             },
             {
               title: "Diversity, Equity, and Inclusivity: The Cornerstones of Success",
@@ -52,10 +55,10 @@ const HeroSection = () => {
               title: "The impact of Social Equilibrium",
               description:
                 "Enhanced Creativity: When individuals are free to express their authentic selves, creative ideas emerge naturally. Stronger Team Bonds: By valuing each person’s unique contributions, we foster a sense of belonging and mutual respect that strengthens our teamwork. Continuous Learning: Our commitment to #LearnWhileWork ensures that every day is an opportunity to grow, adapt, and improve—both individually and collectively. Resilient Innovation: A diverse and inclusive environment leads to more robust problem-solving. We’re better equipped to navigate challenges and seize new opportunities.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/44.jpg",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/social.jpg",
             },
             {
-              title: "Join us Journey",
+              title: "Join our Journey",
               description:
                 "At xTRansmatrix, Social Equilibrium isn’t just an idea—it’s a way of life. It’s a balanced approach that underpins every success story and every breakthrough innovation. We invite you to be a part of this journey. Whether you’re a client, a colleague, or someone passionate about a collaborative and inclusive future, there’s a place for you in our community.",
               imgSrc: "/images/about-us(Cultures)/learnmore/thework/55.jpg",
@@ -81,7 +84,7 @@ const HeroSection = () => {
                 <img
                   src={card.imgSrc}
                   alt={card.title}
-                  className="rounded-lg w-full md:w-5/6 h-80 object-cover"
+                  className="rounded-lg w-full md:w-6/6 h-50 object-cover"
                 />
               </div>
             </div>
