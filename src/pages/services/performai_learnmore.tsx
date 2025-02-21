@@ -69,30 +69,32 @@ const ExpertiseSection = () => {
 
 const DataTaggingSection = () => {
   return (
-    <div className="w-full bg-black text-white py-16 px-6 pl-10  ">
-      <div className="flex flex-col lg:flex-row items-center justify-between ">
-        <div className="lg:w-1/2 pl-12">
-          <h2 className="text-4xl font-bold text-center lg:text-left mb-6  ">
-            Focus on AI Data <span className="text-purple-400 ">Tagging & Annotation</span>
-          </h2>
-          <p className="text-center lg:text-left max-w-3xl mx-auto text-gray-300 mb-10 ">
-            Our Data Tagging and Annotation Service provides high-quality, structured datasets for
-            AI model training and fine-tuning. Whether it's image annotation, video labeling,
-            speech transcription, or text classification, we offer human-in-the-loop feedback to
-            ensure the accuracy and reliability of AI-driven automation. This is made possible by
-            our large workforce of 50+ trained personnel, ensuring efficiency and scalability.
-          </p>
-        </div>
-
-        {/* Right Side Image */}
-        <div className="lg:w-2/2 flex justify-center">
-          <img
-            src="/images/services1/perform ai/learnmore/1.png"
-            alt="AI Robot"
-            className="w-80 h-auto"
-          />
-        </div>
+    <div className="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-24 xl:px-36">
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div className="lg:w-1/2 lg:pl-16 xl:pl-32">
+        <h2 className="text-4xl font-bold text-center lg:text-left mb-6">
+          Focus on AI Data <span className="text-purple-400">Tagging & Annotation</span>
+        </h2>
+        <p className="text-center lg:text-left max-w-3xl mx-auto text-gray-300 mb-10">
+          Our Data Tagging and Annotation Service provides high-quality, structured datasets for
+          AI model training and fine-tuning. Whether it's image annotation, video labeling,
+          speech transcription, or text classification, we offer human-in-the-loop feedback to
+          ensure the accuracy and reliability of AI-driven automation. This is made possible by
+          our large workforce of 50+ trained personnel, ensuring efficiency and scalability.
+        </p>
       </div>
+  
+      {/* Right Side Image */}
+      <div className="lg:w-1/2 flex justify-center lg:pl-16 xl:pl-32">
+        <img
+          src="/images/services1/perform ai/learnmore/1.png"
+          alt="AI Robot"
+          className="w-64 h-auto lg:w-80"
+        />
+      </div>
+    </div>
+  
+
       
       {/* Boxes Below */}
       <div className="w-full flex flex-wrap justify-center gap-6 mt-10">

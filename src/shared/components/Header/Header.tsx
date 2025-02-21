@@ -53,7 +53,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <ul className="absolute top-full left-0 w-full bg-gray-700 text-white rounded-lg shadow-lg p-4 space-y-4 text-center md:hidden">
-            {["about", "services", "industries", "intelligence"].map((category) => (
+            {["about", "services", "industries", "intelligence","Careers"].map((category) => (
               <li key={category} className="hover:text-[#5552FF]">
                 <button onClick={() => setMobileSubmenu(mobileSubmenu === category ? null : category)}
                   className="w-full text-left flex justify-between items-center px-4 py-2">
@@ -95,7 +95,14 @@ const Header = () => {
                       </>
                     )}
                     
-                    
+                    {category === "Careers" && (
+                    <>
+                      <li><Link to="/career_search">Career Search</Link></li>
+                      <li><Link to="/entry_Level_Innotern">Entry Level / Innotern</Link></li>
+                      <li><Link to="/experienced_Hired">Experienced Hired</Link></li>
+                      <li><Link to="/team">Meet Our Team</Link></li>
+                    </>
+                  )}
                   </ul>
                 )}
               </li>
@@ -110,7 +117,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-sm font-semibold">
-          {["about", "services", "industries", "intelligence"].map((category) => (
+          {["about", "services", "industries", "intelligence","Careers"].map((category) => (
             <div
               key={category}
               className="relative group"
@@ -157,6 +164,15 @@ const Header = () => {
                     <>
                       <li><Link to="/xtmx-intelligence">XTMX Intelligence</Link></li>
                       <li><Link to="/events">Events</Link></li>
+                    </>
+                  )}
+                  
+                  {category === "Careers" && (
+                    <>
+                      <li><Link to="/search">Career Search</Link></li>
+                      <li><Link to="/entry_Level_Innotern">Entry Level / Innotern</Link></li>
+                      <li><Link to="/experienced_Hired">Experienced Hired</Link></li>
+                      <li><Link to="/team">Meet Our Team</Link></li>
                     </>
                   )}
                 </ul>

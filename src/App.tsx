@@ -37,18 +37,21 @@ const Banking = lazy(() => import("./pages/Industries/banking"));
 
 const XTMXIntelligence = lazy(() => import("./pages/Intelligence/xtmx-intelligence"));
 const Events = lazy(() => import("./pages/Intelligence/events"));
+
 const NotFound = lazy(() => import("./pages/notfound"));
+
+const Search = lazy(() => import("./pages/career/search"));
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Layout>
-        <Suspense fallback={<Loading />}>
-          <Routes>
-            {/* Home Page */}
-            <Route
-              path="/"
-              element={
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          {/* Home Page */}
+          <Route
+            path="/"
+            element={
+              <Layout>
                 <>
                   <SplineComponent />
                   <Services />
@@ -59,43 +62,195 @@ const App: React.FC = () => {
                   <Team />
                   <Contact />
                 </>
-              }
-            />
+              </Layout>
+            }
+          />
 
-            {/* About Us */}
-            <Route path="/cultures-values-esg" element={<CulturesValuesESG />} />
-            <Route path="/thework" element={<Thework />} />
-            <Route path="/future" element={<Future />} />
-            <Route path="/diversity-young-minds" element={<DiversityYoungMinds />} />
-            <Route path="/recent-awards-recognition" element={<RecentAwardsRecognition />} />
-            <Route path="/our-partners" element={<OurPartners />} />
+          {/* About Us */}
+          <Route
+            path="/cultures-values-esg"
+            element={
+              <Layout>
+                <CulturesValuesESG />
+              </Layout>
+            }
+          />
+          <Route
+            path="/thework"
+            element={
+              <Layout>
+                <Thework />
+              </Layout>
+            }
+          />
+          <Route
+            path="/future"
+            element={
+              <Layout>
+                <Future />
+              </Layout>
+            }
+          />
+          <Route
+            path="/diversity-young-minds"
+            element={
+              <Layout>
+                <DiversityYoungMinds />
+              </Layout>
+            }
+          />
+          <Route
+            path="/recent-awards-recognition"
+            element={
+              <Layout>
+                <RecentAwardsRecognition />
+              </Layout>
+            }
+          />
+          <Route
+            path="/our-partners"
+            element={
+              <Layout>
+                <OurPartners />
+              </Layout>
+            }
+          />
 
-            {/* Services */}
-            <Route path="/forge-ai" element={<ForgeAI />} />
-            <Route path="/forgeai_learnmore" element={<Forgeai_learnmore />} />
+          {/* Services */}
+          <Route
+            path="/forge-ai"
+            element={
+              <Layout>
+                <ForgeAI />
+              </Layout>
+            }
+          />
+          <Route
+            path="/forgeai_learnmore"
+            element={
+              <Layout>
+                <Forgeai_learnmore />
+              </Layout>
+            }
+          />
 
-            <Route path="/perform-ai" element={<PerformAI />} />
-            <Route path="/performai_learnmore" element={<Performai_learnmore />} />
+          <Route
+            path="/perform-ai"
+            element={
+              <Layout>
+                <PerformAI />
+              </Layout>
+            }
+          />
+          <Route
+            path="/performai_learnmore"
+            element={
+              <Layout>
+                <Performai_learnmore />
+              </Layout>
+            }
+          />
 
-            <Route path="/advisory" element={<Advisory />} />
-            <Route path="/tech-squads" element={<TechSquads />} />
-         
-            {/* Industries */}
-            <Route path="/medtech" element={<MedTech />} />
-            <Route path="/automobile" element={<Automobile />} />
-            <Route path="/insurance" element={<Insurance />} />
-            <Route path="/banking" element={<Banking />} />
+          <Route
+            path="/advisory"
+            element={
+              <Layout>
+                <Advisory />
+              </Layout>
+            }
+          />
+          <Route
+            path="/tech-squads"
+            element={
+              <Layout>
+                <TechSquads />
+              </Layout>
+            }
+          />
 
-            {/* Intelligence */}
-            <Route path="/xtmx-intelligence" element={<XTMXIntelligence />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/contact" element={<Contact />} />
- 
-            {/* 404 Page */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </Layout>
+          {/* Industries */}
+          <Route
+            path="/medtech"
+            element={
+              <Layout>
+                <MedTech />
+              </Layout>
+            }
+          />
+          <Route
+            path="/automobile"
+            element={
+              <Layout>
+                <Automobile />
+              </Layout>
+            }
+          />
+          <Route
+            path="/insurance"
+            element={
+              <Layout>
+                <Insurance />
+              </Layout>
+            }
+          />
+          <Route
+            path="/banking"
+            element={
+              <Layout>
+                <Banking />
+              </Layout>
+            }
+          />
+
+          {/* Intelligence */}
+          <Route
+            path="/xtmx-intelligence"
+            element={
+              <Layout>
+                <XTMXIntelligence />
+              </Layout>
+            }
+          />
+          <Route
+            path="/events"
+            element={
+              <Layout>
+                <Events />
+              </Layout>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Layout>
+                <Contact />
+              </Layout>
+            }
+          />
+
+          {/* 404 Page */}
+          <Route path="*" element={<NotFound />} />
+
+          {/* Careers */}
+          <Route
+            path="/team"
+            element={
+              <Layout>
+                <Team />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/search"
+            element={
+              <Layout>
+                <Search />
+              </Layout>
+            }
+          />
+        </Routes>
+      </Suspense>
     </Router>
   );
 };

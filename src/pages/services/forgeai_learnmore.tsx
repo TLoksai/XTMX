@@ -1,6 +1,6 @@
 const ServicesPage = () => {
   return (
-    <div className="w-full bg-black text-white">
+    <div className="w-full bg-[#080412] text-white">
     {/* Hero Section */}
     <section className="bg-[#080412] text-white">
       {/* Hero Image with Parallax Effect */}
@@ -27,7 +27,7 @@ const ServicesPage = () => {
 
     <div className="flex flex-col items-center justify-center p-10">
         <p className="text-center max-w-3xl mb-8 text-gray-300">
-          Perform AI is a specialized AI development service focused on building Gen AI-integrated products
+          Forge AI is a specialized AI development service focused on building Gen AI-integrated products
           that are enterprise-grade, production-ready, and fully supported. We work with businesses that have
           a clear idea and roadmap, executing their vision with precision and scalability.
         </p>
@@ -72,7 +72,7 @@ Optimize Al models and infrastructure for scale.
         </div>
       </div>
 
-      <div className="bg-[#0d0b1a] text-white py-16 px-8 md:px-24 lg:px-32 text-center">
+      <div className="bg-[#080412] text-white py-16 px-8 md:px-24 lg:px-32 ml-4 md:ml-8 lg:ml-16 xl:ml-32">
       {/* Why is this for? Section */}
       <section className="mb-12">
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
@@ -80,7 +80,7 @@ Optimize Al models and infrastructure for scale.
         </h2>
         <ul className="list-disc list-inside space-y-4 text-gray-300">
           <li>
-            <span className="text-[#B296F1] font-semibold ">Startups</span> and{" "}
+            <span className="text-[#B296F1] font-semibold">Startups</span> and{" "}
             <span className="text-[#B296F1] font-semibold">entrepreneurs</span>{" "}
             validating AI ideas.
           </li>
@@ -100,9 +100,7 @@ Optimize Al models and infrastructure for scale.
       <section>
         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6">
           Compliance{" "}
-          <span className="text-[#B296F1]">
-            ( Data & Cyber Security Coverage )
-          </span>
+          <span className="text-[#B296F1]">( Data & Cyber Security Coverage )</span>
         </h2>
         <ul className="list-disc list-inside space-y-4 text-gray-300">
           <li>Comprehensive & General Insurance: 2M USD coverage</li>
@@ -113,6 +111,7 @@ Optimize Al models and infrastructure for scale.
         </ul>
       </section>
     </div>
+
      {/* Main Container */}
      <section
       className="relative flex justify-center px-4 sm:px-6 md:px-16 lg:px-24 py-24 sm:py-32 text-white bg-[url('/images/contact.png')] bg-[length:80%] bg-center bg-no-repeat"
