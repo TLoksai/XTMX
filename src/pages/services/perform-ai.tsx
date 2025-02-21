@@ -42,10 +42,11 @@ const PerformAISection: React.FC = () => {
             the fast-paced world of intelligent automation and data-driven
             decision-making.
           </p>
-
+          <a href="/performai_learnmore">
           <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 hover:shadow-lg transition-all duration-300 text-white font-semibold rounded-full flex items-center">
             Learn more →
           </button>
+          </a>
         </div>
 
         {/* Right-side Image */}

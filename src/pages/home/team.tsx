@@ -8,7 +8,7 @@ const teamMembers = [
   { name: "Dr Akshay SP", title: "AI risk & governance Head", image: "/images/team/akshay.png" },
   { name: "Akhilesh Kunhi Raman", title: "Operations & Design Head", image: "/images/team/akhilesh.png" },
   { name: "Jeevan SP", title: "AI & Data solutions architect", image: "/images/team/jeevan.png" },
-  { name: "Shashank L k", title: "Head of Tech", image: "/images/team/shashank2.png" },
+  { name: "Shashank L k", title: "Head of Technology", image: "/images/team/shashank6.png" },
 ];
 
 const TeamSection: React.FC = () => {
@@ -45,7 +45,7 @@ const TeamSection: React.FC = () => {
               <div className="absolute top-0 left-0 right-0 bottom-0 border-[6px] border-white"></div>
 
               {/* Image */}
-              <div className="absolute -top-1 inset-x-2 flex justify-center">
+              <div className="absolute -top-3 inset-x-2 flex justify-center">
                 <img src={member.image} alt={member.name} className="w-full object-cover rounded-t-lg" style={{ height: "70%" }} />
               </div>
 
@@ -58,7 +58,7 @@ const TeamSection: React.FC = () => {
           ))}
         </div>
 
-        {/* View More Button (Links to another page) */}
+        {/* View More Button (Links to another page) 
         <div className="mt-12">
           <a
             href="/team" // Change this to your actual team page route
@@ -67,6 +67,7 @@ const TeamSection: React.FC = () => {
             View More
           </a>
         </div>
+        */}
       </div>
     </section>
   );

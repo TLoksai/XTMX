@@ -1,4 +1,5 @@
 import React from "react";
+import Spline from "@splinetool/react-spline"; // Import Spline component
 
 // Variable to control image alignment
 const IMAGE_ALIGNMENT = "justify-end"; // Change to "justify-start", "justify-center", or "justify-end"
@@ -38,14 +39,13 @@ const DiversitySection: React.FC = () => {
           </button>
         </div>
 
-        {/* Right-side Image */}
+        {/* Right-side Spline 3D Model */}
         <div className={`md:w-1/2 flex ${IMAGE_ALIGNMENT}`}>
-          <img
-            src="/images/about-us(Diversity)/1.png"
-            alt="Diversity"
-            className="w-72 md:w-67"
-          />
-        </div>
+  <div className="w-[400px] h-[400px] md:w-[500px] md:h-[500px]">
+    <Spline scene="https://prod.spline.design/fJqMbRZBIkHXY44t/scene.splinecode" />
+  </div>
+</div>
+
       </div>
     </section>
   );

@@ -22,7 +22,11 @@ const RecentAwardsRecognition = lazy(() => import("./pages/about-us/recent-award
 const OurPartners = lazy(() => import("./pages/about-us/our-partners"));
 
 const ForgeAI = lazy(() => import("./pages/services/forge-ai"));
+const Forgeai_learnmore = lazy(() => import("./pages/services/forgeai_learnmore"));
+
 const PerformAI = lazy(() => import("./pages/services/perform-ai"));
+const Performai_learnmore = lazy(() => import("./pages/services/performai_learnmore"));
+
 const Advisory = lazy(() => import("./pages/services/advisory"));
 const TechSquads = lazy(() => import("./pages/services/tech-squads"));
  
@@ -68,7 +72,11 @@ const App: React.FC = () => {
 
             {/* Services */}
             <Route path="/forge-ai" element={<ForgeAI />} />
+            <Route path="/forgeai_learnmore" element={<Forgeai_learnmore />} />
+
             <Route path="/perform-ai" element={<PerformAI />} />
+            <Route path="/performai_learnmore" element={<Performai_learnmore />} />
+
             <Route path="/advisory" element={<Advisory />} />
             <Route path="/tech-squads" element={<TechSquads />} />
          

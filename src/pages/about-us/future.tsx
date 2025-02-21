@@ -2,25 +2,25 @@ const HeroSection = () => {
     return (
       <section className="#080412 text-white">
         {/* Hero Image */}
-        <div className="relative">
-          <img
-            src="/images/about-us(Cultures)/learnmore/future/hero.png"
-            alt="Hero"
-            className="w-full object-cover h-[600px] md:h-[900px]" // Adjusted for mobile
-          />
-          
-          {/* Overlay Image */}
-          <img
-            src="/images/about-us(Cultures)/learnmore/future/over.png"  // Replace with your second image source
-            alt="Overlay Image"
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-90" // Adjust opacity and positioning as needed
-          />
-  
-          <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-6xl font-bold text-center">
-            How xTransMatrix is <br />
-            Transforming Tomorrow
-          </h1>  
-        </div>
+        <div
+        className="relative bg-fixed bg-center bg-cover h-[700px]  md:h-[600px] sm:h-[400px] "
+        style={{
+          backgroundImage: "url('/images/about-us(Cultures)/learnmore/future/hero.png')",
+        }}
+      >
+        {/* Overlay Image */}
+        <img
+          src="/images/about-us(Cultures)/learnmore/thework/over.png"
+          alt="Overlay Image"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
+        />
+
+        {/* Heading */}
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-center">
+          Embracing Social Equilibrium at <br />
+          Work: The xTransMatrix Way
+        </h1>
+      </div> 
   
         {/* Intro Text */}
         <div className="px-4 md:px-16 py-8 text-center">
@@ -69,7 +69,7 @@ const HeroSection = () => {
               title: "Join the Movement",
               description:
                 "As we continue to push the boundaries of what’s possible, we invite you to be a part of our journey. Whether you’re a client looking to revolutionize your business, a community member eager to embrace change, or a fellow innovator ready to challenge the norms, xTRansmatrix is here to collaborate and inspire. Together, we can ignite the future and create a world where innovation meets impact.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/future/movement2.jpg",
+              imgSrc: "/images/about-us(Cultures)/learnmore/future/sucess.jpg",
             },
           ].map((card, index) => (
             <div

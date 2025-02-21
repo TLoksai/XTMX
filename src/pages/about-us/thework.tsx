@@ -49,7 +49,7 @@ const HeroSection = () => {
               title: "Diversity, Equity, and Inclusivity: The Cornerstones of Success",
               description:
                 "Social Equilibrium is more than a concept; it’s a commitment to building a workplace where everyone feels valued and empowered. By merging diversity, equity, and inclusivity with a collaborative mindset, we create an environment where innovative ideas flourish. This balanced approach drives our success and sets the stage for groundbreaking solutions that benefit our clients, our industry, and our communities.",
-              imgSrc: "/images/about-us(Cultures)/learnmore/thework/33.jpg",
+              imgSrc: "/images/about-us(Cultures)/learnmore/thework/movement2.jpg",
             },
             {
               title: "The impact of Social Equilibrium",

@@ -40,10 +40,11 @@ const ForgeAISection: React.FC = () => {
             the speed, flexibility, and innovative technology required to bring
             your vision to life—faster and smarter than ever before.
           </p>
-
+          <a href="/forgeai_learnmore">
           <button className="mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 hover:shadow-lg transition-all duration-300 text-white font-semibold rounded-full flex items-center">
             Learn more →
           </button>
+          </a>
         </div>
 
         {/* Right-side Image */}
