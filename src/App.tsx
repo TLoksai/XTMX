@@ -41,6 +41,8 @@ const Events = lazy(() => import("./pages/Intelligence/events"));
 const NotFound = lazy(() => import("./pages/notfound"));
 
 const Search = lazy(() => import("./pages/career/search"));
+const Innotern = lazy(() => import("./pages/career/innotern"));
+const Experienced = lazy(() => import("./pages/career/experienced"));
 
 const App: React.FC = () => {
   return (
@@ -246,6 +248,24 @@ const App: React.FC = () => {
             element={
               <Layout>
                 <Search />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/hiring_Innotern"
+            element={
+              <Layout>
+                <Innotern />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/experienced_hired"
+            element={
+              <Layout>
+                <Experienced />
               </Layout>
             }
           />

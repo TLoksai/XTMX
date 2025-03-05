@@ -6,7 +6,7 @@ const IMAGE_ALIGNMENT = "justify-end"; // Change to "justify-start", "justify-ce
 
 const DiversitySection: React.FC = () => {
   return (
-    <section className="bg-[#0a0214] text-white font-inter">
+    <section className="bg-[#080412] text-white font-inter">
       {/* Banner Section with Parallax Effect */}
       <div className="relative w-full h-[200px] md:h-[300px] overflow-hidden">
         <div

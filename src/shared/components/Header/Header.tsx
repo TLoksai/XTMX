@@ -97,9 +97,9 @@ const Header = () => {
                     
                     {category === "Careers" && (
                     <>
-                      <li><Link to="/career_search">Career Search</Link></li>
-                      <li><Link to="/entry_Level_Innotern">Entry Level / Innotern</Link></li>
-                      <li><Link to="/experienced_Hired">Experienced Hired</Link></li>
+                      <li><Link to="/search">Career Search</Link></li>
+                      <li><Link to="/hiring_Innotern">Hiring / Innotern</Link></li>
+                      <li><Link to="/experienced_hired">Experienced Hired</Link></li>
                       <li><Link to="/team">Meet Our Team</Link></li>
                     </>
                   )}
@@ -170,8 +170,8 @@ const Header = () => {
                   {category === "Careers" && (
                     <>
                       <li><Link to="/search">Career Search</Link></li>
-                      <li><Link to="/entry_Level_Innotern">Entry Level / Innotern</Link></li>
-                      <li><Link to="/experienced_Hired">Experienced Hired</Link></li>
+                      <li><Link to="/hiring_Innotern">Hiring / Innotern</Link></li>
+                      <li><Link to="/experienced_hired">Experienced Hired</Link></li>
                       <li><Link to="/team">Meet Our Team</Link></li>
                     </>
                   )}
