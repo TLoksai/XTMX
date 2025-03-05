@@ -1,4 +1,0 @@
-fastapi
-uvicorn
-mongo
-pymongo
