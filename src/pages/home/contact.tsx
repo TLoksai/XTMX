@@ -21,13 +21,14 @@ const ContactSection = () => {
     setResponseMessage("");
 
     try {
-      const response = await axios.post("https://xtmx-career-backend-3.onrender.com/contact", formData);
+      const response = await axios.post("https://xtmx-career-backend-3.onrender.com/submit", formData);
       setResponseMessage(response.data.message || "Message sent successfully!");
       setFormData({ name: "", email: "", message: "" }); 
     } catch (error) {
       setResponseMessage("Failed to send message. Please try again.");
     } finally {
       setLoading(false);
+      
     }
   };
 
@@ -88,7 +89,6 @@ const ContactSection = () => {
                 {loading ? "Sending..." : "Send my message"}
               </button>
             </form>
-
             
             {responseMessage && (
               <p className={`text-sm mt-4 text-center ${responseMessage.includes("Failed") ? "text-red-400" : "text-green-400"}`}>

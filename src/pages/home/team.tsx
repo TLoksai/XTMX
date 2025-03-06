@@ -5,8 +5,8 @@ const teamMembers = [
   { name: "Anupam K", title: "Delivery & Ops Excellence", image: "/images/team/anupam1.png" },
   { name: "Prasanna Patel", title: "Sales, Finance & Admin", image: "/images/team/prasanna.png" },
   { name: "Dr K Johsil", title: "Partnership", image: "/images/team/joshil.png" },
-  { name: "Dr Akshay SP", title: "AI risk & governance Head", image: "/images/team/akshay.png" },
-  { name: "Akhilesh Kunhi Raman", title: "AI Strategy and Governance", image: "/images/team/akhilesh.png" },
+  { name: "Dr Akshay SP", title: "AI Strategy and Governance", image: "/images/team/akshay.png" },
+  { name: "Akhilesh Kunhi Raman", title: "Head of Design & Ops", image: "/images/team/akhilesh.png" },
   { name: "Jeevan SP", title: "AI & Data solutions architect", image: "/images/team/jeevan.png" },
   { name: "Shashank L k", title: "Head of Technology", image: "/images/team/shashank6.png" },
 ];

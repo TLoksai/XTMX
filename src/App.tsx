@@ -44,6 +44,8 @@ const Search = lazy(() => import("./pages/career/search"));
 const Innotern = lazy(() => import("./pages/career/innotern"));
 const Experienced = lazy(() => import("./pages/career/experienced"));
 
+const Dashboard = lazy(() => import("./pages/dashboard"));
+
 const App: React.FC = () => {
   return (
     <Router>
@@ -266,6 +268,14 @@ const App: React.FC = () => {
             element={
               <Layout>
                 <Experienced />
+              </Layout>
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <Layout>
+                <Dashboard />
               </Layout>
             }
           />
