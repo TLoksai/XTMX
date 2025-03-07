@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import { Client } from "filestack-js";
 
-const filestackClient = new Client("AADdJbQt2TkSh8eXwq4Boz");
+const API_BASE_URL = "https://xtmx-career-backend-3.onrender.com";
 
 interface Job {
   id: string;
@@ -33,7 +31,7 @@ const Search: React.FC = () => {
   const [selectedLocation, setSelectedLocation] = useState("India - Bengaluru");
   const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState(""); // Added phone field
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [resumeFile, setResumeFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
@@ -44,20 +42,6 @@ const Search: React.FC = () => {
       job.id.toString().includes(searchTerm)
   );
 
-  const handleFileUpload = async () => {
-    if (resumeFile) {
-      try {
-        const result = await filestackClient.upload(resumeFile);
-        return result.url;
-      } catch (error) {
-        console.error("Error uploading file:", error);
-        alert("Failed to upload resume. Please try again.");
-        return null;
-      }
-    }
-    return null;
-  };
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!resumeFile) {
@@ -66,44 +50,29 @@ const Search: React.FC = () => {
     }
 
     setLoading(true);
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("phone", phone);
+    formData.append("email", email);
+    formData.append("role", jobs.find((job) => job.id === selectedJobId)?.title || "Unknown");
+    formData.append("resume", resumeFile);
 
     try {
-      const resumeURL = await handleFileUpload();
-      if (resumeURL) {
-        const selectedJob = jobs.find((job) => job.id === selectedJobId);
+      const response = await fetch(`${API_BASE_URL}/upload/`, {
+        method: "POST",
+        body: formData,
+      });
 
-        // Send job application
-        await emailjs.send(
-          "service_pn4ti6c",
-          "template_gnlijd2",
-          {
-            name,
-            phone, // Send phone number in email
-            email,
-            resume_url: resumeURL,
-            job_title: selectedJob?.title || "Unknown Job",
-          },
-          "2btEXxVRTaaq9YcDO"
-        );
-
-        // Auto-reply to applicant
-        await emailjs.send(
-          "service_pn4ti6c",
-          "template_ag315q8",
-          {
-            name,
-            email,
-            job_title: selectedJob?.title || "Unknown Job",
-          },
-          "2btEXxVRTaaq9YcDO"
-        );
-
-        alert("Application submitted! You will receive a confirmation email.");
-        setName("");
-        setPhone(""); // Reset phone field
-        setEmail("");
-        setResumeFile(null);
+      if (!response.ok) {
+        throw new Error("Failed to submit application");
       }
+
+      const data = await response.json();
+      alert("Application submitted successfully!");
+      setName("");
+      setPhone("");
+      setEmail("");
+      setResumeFile(null);
     } catch (error) {
       alert("Error submitting application. Please try again.");
       console.error("Error:", error);
@@ -114,35 +83,27 @@ const Search: React.FC = () => {
 
   return (
     <div className="w-full bg-[#080412] text-white">
-      {/* Hero Section */}
       <section className="bg-[#080412] text-white">
         <div
           className="relative bg-fixed bg-center bg-cover h-[750px] md:h-[550px] sm:h-[450px] flex items-center -mt-8"
           style={{ backgroundImage: "url('/images/career.png')" }}
         >
-          <img
-            src="/images/about-us(Cultures)/learnmore/thework/over.png"
-            alt="Overlay Image"
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-110"
-          />
           <h1 className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-center">
             Begin your xTransMatrix journey
           </h1>
         </div>
       </section>
 
-      {/* Alert Message - Moved inside job container for alignment */}
       <div className="p-6 bg-black text-white min-h-screen px-8 md:px-20 lg:px-40">
         <div className="text-center p-4 mb-6 border border-red-600 rounded-md bg-gray-800">
           <h1 className="text-xl font-bold text-red-500">
             ALERT: BE AWARE OF FRAUDULENT JOB OFFERS
           </h1>
           <p className="text-sm text-gray-200 mt-2">
-          We have been informed of several scams targeting the public, involving fraudsters pretending to be from xTransMatrix or claiming an affiliation with xTransMatrix. To protect yourself, please note that xTransMatrix recruiters will only contact you through official channels. We strongly advise you to verify the identity of anyone reaching out to you and exercise caution before engaging in any communication that does not follow these official channels.
+            We have been informed of several scams targeting the public, involving fraudsters pretending to be from xTransMatrix. Please verify the identity of anyone reaching out to you.
           </p>
         </div>
 
-        {/* Search Bar */}
         <div className="flex flex-col md:flex-row gap-4 mb-4">
           <input
             type="text"
@@ -161,7 +122,6 @@ const Search: React.FC = () => {
           </select>
         </div>
 
-        {/* Job Listings */}
         <ul>
           {filteredJobs.map((job) => (
             <li key={job.id} className="border-b p-4 bg-gray-900 rounded-lg mb-4">

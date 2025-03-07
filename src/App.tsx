@@ -44,7 +44,7 @@ const Search = lazy(() => import("./pages/career/search"));
 const Innotern = lazy(() => import("./pages/career/innotern"));
 const Experienced = lazy(() => import("./pages/career/experienced"));
 
-const Dashboard = lazy(() => import("./pages/dashboard"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
 
 const App: React.FC = () => {
   return (
